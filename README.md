@@ -12,7 +12,7 @@
 2. Escreva uma função que receba 2 parâmetros, uma String e um Inteiro.Essa função deve ter como retorno outra String. O Objetivo da função é substituir o caracter "?" criando uma repetição do caracter que está antes dele o numero de vezes do parametro Inteiro. Caso o caracter "?" seja o primeiro da String fornecida ele deve repetir o último caracter da String. Exemplos:
 
    * function replaceChar("x?yzza?y?", 1) => "xxyzzaayy"
-* function replaceChar("x?yzza?y?", 2) => "xxxyzzaaayyy"
+   * function replaceChar("x?yzza?y?", 2) => "xxxyzzaaayyy"
    * function replaceChar("?x?yzza?y?", 2) => "yyxxxyzzaaayyy"
 
    **Código**: [Exercício 2](./src/exer2.js)
