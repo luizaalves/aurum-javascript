@@ -7,13 +7,17 @@ const removeRepeated = (string, limit) => {
     for(let i=0;i<string.length;i++){
         let count = 1;
         if(i+1!=string.length){
-            for(let j=i+1;j<string.length;j++){
+            let j = i+1;
+            while(j<string.length){
                 if(string[i]==string[j]){
                     if(count==limit){
-                        var pieceOne=string.substring(0,j-1);
+                        var pieceOne=string.substring(0,j);
                         var pieceTwo=string.substring(j+1,string.length);
                         string = pieceOne+pieceTwo;
-                    }else count++;
+                    }else {
+                        count++;
+                        j++;
+                    }
                 }else break;
             }
         }
@@ -21,4 +25,5 @@ const removeRepeated = (string, limit) => {
     return string;
 }
 
-export default removeRepeated;
+//export default removeRepeated;
+module.exports = removeRepeated;
