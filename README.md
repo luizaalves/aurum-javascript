@@ -1,11 +1,13 @@
 # Desafio aurum-javascript
 
+[Instruções de compilação](./instrucoes.md)
+
 1. Escreva uma função que receba 2 parâmetros, uma String e um Inteiro. Essa função deve ter como retorno outra String. O objetivo da função é remover os caracteres repetidos consecutivamente e que extrapolam o limite (valor inteiro) passado como segundo parâmetro, ou seja, se o limite for 2, os caracteres podem ser repetidos no máximo duas vezes. Exemplos:
 
    * function removeRepeated("xxxyzzaaayy", 1) => "xyzay"
    * function removeRepeated("xxxyzzaaayy", 2) => "xxyzzaayy"
 
-   **Código**: [Exercício 1](./src/exer1.js)
+   **Código**: [Exercício 1](./frontend/src/funcoes/removendoRepeticao.js)
 
    ___
 
@@ -15,7 +17,7 @@
    * function replaceChar("x?yzza?y?", 2) => "xxxyzzaaayyy"
    * function replaceChar("?x?yzza?y?", 2) => "yyxxxyzzaaayyy"
 
-   **Código**: [Exercício 2](./src/exer2.js)
+   **Código**: [Exercício 2](./frontend/src/funcoes/criandoRepeticao.js)
 
 ___
 
@@ -26,4 +28,4 @@ ___
    * function lettersSum("dacb", "gdab") => 11
    * function lettersSum("dcb", "gdab") => 18
    
-   **Código**: [Exercício 3](./src/exer3.js)
+   **Código**: [Exercício 3](./frontend/src/funcoes/somaLetras.js)
