@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Pagina from './App';
+import App from './App';
 
 ReactDOM.render(
-  <Pagina />,
+  <App />,
   document.getElementById('root')
 );

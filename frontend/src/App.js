@@ -1,52 +1,40 @@
-import React from 'react';
-import removeRepeated from './exer1';
+import React, { useState } from 'react';
+import removeRepeated from './removeRepeated';
 
-class Pagina extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {palavra: '', limite: '', str: ''};
+function App() {
+    var [palavra, setPalavra] = useState('');
+    var [limite, setLimite] = useState('');
+    var str;
 
-    this.handleChange = this.handleChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
-  }
+    async function handleSubmit(event){
+        event.preventDefault();
+        str = removeRepeated(String(palavra),Number(limite));
+        alert('Removendo palavras repetidas\nResultado: ' + str);
+    }
 
-  handleChange(event) {
-    this.setState({
-      palavra: event.target.palavra,
-      limite: event.target.limite, 
-      str: event.target.str
-    });
-  }
-
-  handleSubmit(event){
-    event.preventDefault();
-
-    this.state.str = removeRepeated(this.state.palavra.str,this.state.limite.value);
-    console.log(this.state.str);
-  }
-  render() {
     return (
-      <form onSubmit={this.handleSubmit}>
+      <><td><form onSubmit={handleSubmit}>
+        <a>Removendo palavras repetidas </a>
         <div>
           <label>
             Palavra:
-            <input type="text" value={this.state.palavra} onChange={this.handleChange} />
+            <input type="text" value={palavra} onChange={event=> setPalavra(event.target.value)}/>
           </label>
         </div>
         <div>
           <label>
-            Limite:
-            <input type="text" value={this.state.limite} onChange={this.handleChange}  />
+              Limite:
+              <input type="text" value={limite} onChange={event=> setLimite(event.target.value)}/>
           </label>
         </div>
         <div>
-          <input type="submit" value="Enviar" />
-          <a>{this.state.str}</a>
+          <input type="submit" value="Enviar"/>
         </div>
-      </form>
-    )
-  }
+      </form></td>
+      <td><a>Teste</a>
+      </td></>
+    );
     //"xxyzzaayy"  
 }
 
-export default Pagina;
+export default App;
