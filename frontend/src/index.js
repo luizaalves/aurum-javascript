@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './page/RemovendoRepeticao';
-import Teste from './page/CriandoRepeticao'
+import RemovendoRepeticao from './page/RemovendoRepeticao';
+import CriandoRepeticao from './page/CriandoRepeticao'
 
 ReactDOM.render(
   <React.Fragment>
-    <App/>
-    < Teste/>
+    <RemovendoRepeticao/>
+    < CriandoRepeticao/>
   </React.Fragment>,
   document.getElementById('root')
 );
