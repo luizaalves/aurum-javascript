@@ -13,9 +13,9 @@ function SomaLetras() {
     }
   
     return (
-      <td>
+      
         <form onSubmit={handleSubmit}>
-          <a>Ainda não sei o nome </a>
+          <a>Somando maior e menor das strings </a>
           <div>
             <label>
               Primeira palavra:
@@ -32,7 +32,7 @@ function SomaLetras() {
             <input type="submit" value="Enviar"/>
           </div>
         </form>
-      </td>
+      
     );
 }
 

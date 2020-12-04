@@ -13,7 +13,7 @@ function RemovendoRepeticao() {
   }
 
   return (
-    <td>
+    
       <form onSubmit={handleSubmit}>
         <a>Removendo letras repetidas </a>
         <div>
@@ -32,7 +32,8 @@ function RemovendoRepeticao() {
           <input type="submit" value="Enviar"/>
         </div>
       </form>
-    </td>
+    
+    //<Divider orientation="vertical" />
   );
   //"xxyzzaayy"  
 }

@@ -13,7 +13,7 @@ function CriandoRepeticao() {
     }
   
     return (
-      <td>
+      
         <form onSubmit={handleSubmit}>
           <a>Colocando letras repetidas </a>
           <div>
@@ -32,7 +32,7 @@ function CriandoRepeticao() {
             <input type="submit" value="Enviar"/>
           </div>
         </form>
-      </td>
+      
     );
 }
 
