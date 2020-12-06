@@ -15,7 +15,7 @@ function CriandoRepeticao() {
     return (
       
         <form onSubmit={handleSubmit}>
-          <a>Colocando letras repetidas </a>
+          <title>Colocando letras repetidas </title>
           <div>
             <label>
               Palavra:

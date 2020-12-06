@@ -15,7 +15,7 @@ function RemovendoRepeticao() {
   return (
     
       <form onSubmit={handleSubmit}>
-        <a>Removendo letras repetidas </a>
+        <title>Removendo letras repetidas </title>
         <div>
           <label>
             Palavra:
