@@ -7,7 +7,7 @@
    * function removeRepeated("xxxyzzaaayy", 1) => "xyzay"
    * function removeRepeated("xxxyzzaaayy", 2) => "xxyzzaayy"
 
-   **Código**: [Exercício 1](./frontend/src/funcoes/removendoRepeticao.js)
+   **Código**: [Exercício 1](./src/funcoes/removendoRepeticao.js)
 
    ___
 
@@ -17,7 +17,7 @@
    * function replaceChar("x?yzza?y?", 2) => "xxxyzzaaayyy"
    * function replaceChar("?x?yzza?y?", 2) => "yyxxxyzzaaayyy"
 
-   **Código**: [Exercício 2](./frontend/src/funcoes/criandoRepeticao.js)
+   **Código**: [Exercício 2](./src/funcoes/criandoRepeticao.js)
 
 ___
 
@@ -28,4 +28,4 @@ ___
    * function lettersSum("dacb", "gdab") => 11
    * function lettersSum("dcb", "gdab") => 18
    
-   **Código**: [Exercício 3](./frontend/src/funcoes/somaLetras.js)
+   **Código**: [Exercício 3](./src/funcoes/somaLetras.js)
