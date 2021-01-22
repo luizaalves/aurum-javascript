@@ -1,4 +1,4 @@
-# Desafio aurum-javascript
+# Desafio javascript
 
 [Instruções de compilação](./instrucoes.md)
 
